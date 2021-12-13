@@ -43,34 +43,34 @@ double toNum(string);
 int main()
 {
   loadAscii();
-  string mOrg = "", // Original Message
-      m = "",       // Message
-      c = "";       // Cyphertext
+  string originalMsg = "",        // Original Message
+      initialMessage = "",        // Message
+      message_to_cyphertext = ""; // Cyphertext
   key tKey;
 
   cout << "Message: ";
-  getline(cin, mOrg);
+  getline(cin, originalMsg);
   // Display Keys
   tKey = getPrivateKey();
   cout << "Private Key = (" << tKey.x << ", " << tKey.y << ")" << endl;
   tKey = getPublicKey();
   cout << "Public Key = (" << tKey.x << ", " << tKey.y << ")" << endl;
   // Encode Message via Private Key
-  c = enCrypt(mOrg, getPrivateKey());
+  message_to_cyphertext = enCrypt(originalMsg, getPrivateKey());
   cout << "\nEncoded Message (private key):\n"
-       << c << endl
+       << message_to_cyphertext << endl
        << endl;
   // Decode Message via Public Key
-  m = deCrypt(c, getPublicKey());
-  cout << "Decoded Message (public key): " << m << endl;
+  initialMessage = deCrypt(message_to_cyphertext, getPublicKey());
+  cout << "Decoded Message (public key): " << initialMessage << endl;
   // Encode Message via Public Key
-  c = enCrypt(mOrg, getPublicKey());
+  message_to_cyphertext = enCrypt(originalMsg, getPublicKey());
   cout << "\nEncoded Message (public key):\n"
-       << c << endl
+       << message_to_cyphertext << endl
        << endl;
   // Decode Message via Private Key
-  m = deCrypt(c, getPrivateKey());
-  cout << "Decoded Message (private key): " << m << endl;
+  initialMessage = deCrypt(message_to_cyphertext, getPrivateKey());
+  cout << "Decoded Message (private key): " << initialMessage << endl;
 
   system("pause");
   return 0;
