@@ -3,9 +3,10 @@
   By Sixhei Tartari
   Teacher: Besnik Mehmetaj, CS 378 | UVMS | 2021 December
 
-  Description:  An example of RSA encryption.  Using both public and private keys
-to encode a message to cyphertext and decode cyphertext back to the message.  Both
-Keys are givin via text file using Hex versions of (e,n) and (d,n) notation.
+  Description:  An example of RSA encryption, using both public and private keys
+                to encode a message from normal words to cyphertext and decode cyphertext back to the message. Both
+                Keys are given via text file using Hex versions of (e,n) and (d,n) notation.
+  Reference: https://www.usna.edu/Users/cs/roche/courses/s14si335/proj2/#starter-code
 */
 
 #include <iostream>
