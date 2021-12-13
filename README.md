@@ -17,12 +17,21 @@ Currently it takes a character as input and encypts it using its corresponding a
 First Fork and star this repository 😅
 
 Clone this repo using
-`git clone `
+
+```
+git clone https://github.com/Democles85/RSA-Implementation.git
+```
+
+OR using GitHub CLI
+
+```
+gh repo clone Democles85/RSA-Implementation
+```
 
 Run the following commands on terminal 👨🏻‍💻
 
 ```
-cd RSA V2.0.3
+cd RSA-Implementation
 ```
 
 ```
