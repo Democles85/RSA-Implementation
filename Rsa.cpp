@@ -1,12 +1,12 @@
 /*
 
   RSA Encryption & Decryption
-  By Scott Smereka
-  Teacher: Bruce Elenbogen, CIS 306 Fall 09'
+  By Sixhei Tartari
+  Teacher: Besnik Mehmetaj, UVMS | Vjeshte 2021 | CS 378
 
-  Description:  An example of RSA encryption.  Using both public and private keys
-to encode a message to cyphertext and decode cyphertext back to the message.  Both
-Keys are givin via text file using Hex versions of (e,n) and (d,n) notation.
+  Description:  An example of RSA encryption. Using both public and private keys
+                to encode a message to cyphertext and decode cyphertext back to the message. Both
+                keys are given via text file using Hex versions of (e,n) and (d,n) notation.
 */
 
 #include <iostream>
