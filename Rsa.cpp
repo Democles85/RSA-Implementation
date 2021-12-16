@@ -28,7 +28,7 @@ struct table
 };
 
 vector<table> AsciiTable;
-
+// Declaration of Functions used in the program
 void loadAscii();
 key getPublicKey();
 key getPrivateKey();
@@ -276,8 +276,12 @@ string Reverse(string input)
  Message : Hello I am Democles
  Private Key = (3, 33)
  Public Key = (7, 33)
- Encoded Message(private key) : 0212030803030303030C0020020D00200219030A002002080308030A030C0300030303080304
- Decoded Message(public key) : Hello I am Democles
- Encoded Message(public key) : 021E031D030F030F030C0020021C00200204030A0020021D031D030A030C0300030F031D0319
- Decoded Message(private key) : Hello I am Democles
+ Encoded Message(private key) :
+ 0212030803030303030C0020020D00200219030A002002080308030A030C0300030303080304
+ Decoded Message(public key) :
+ Hello I am Democles
+ Encoded Message(public key) :
+ 021E031D030F030F030C0020021C00200204030A0020021D031D030A030C0300030F031D0319
+ Decoded Message(private key) :
+ Hello I am Democles
  */
