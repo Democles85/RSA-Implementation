@@ -14,8 +14,6 @@ Currently it takes a character as input and encypts it using its corresponding a
 
 ### How to Use
 
-First Fork and star this repository 😅
-
 Clone this repo using
 
 ```
